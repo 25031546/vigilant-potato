@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#ff6f9d" />
     <title>晓雨，我们在一起啦！</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body class="success-page">
     <div class="celebration-particles" aria-hidden="true">
@@ -39,5 +39,11 @@
         <a class="button button-yes back-link" href="index.html">再看一遍我们的告白</a>
       </section>
     </main>
+
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音乐" aria-pressed="false" title="播放背景音乐">
+      <span aria-hidden="true">♫</span>
+    </button>
+    <audio id="bg-music" src="music.mp3" preload="auto" autoplay loop playsinline></audio>
+    <script src="app.js?v=2"></script>
   </body>
 </html>

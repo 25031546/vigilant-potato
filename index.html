@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#fff2f6" />
     <title>给晓雨的一封小情书</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
     <div class="background-hearts" aria-hidden="true">
@@ -59,5 +59,11 @@
         </section>
       </div>
     </main>
+
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="播放背景音乐" aria-pressed="false" title="播放背景音乐">
+      <span aria-hidden="true">♫</span>
+    </button>
+    <audio id="bg-music" src="music.mp3" preload="auto" autoplay loop playsinline></audio>
+    <script src="app.js?v=2"></script>
   </body>
 </html>

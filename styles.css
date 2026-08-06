@@ -32,6 +32,41 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+.music-toggle {
+  position: fixed;
+  z-index: 9;
+  top: max(14px, env(safe-area-inset-top));
+  right: 14px;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
+  color: #de4b7b;
+  font: inherit;
+  border: 1px solid rgba(232, 112, 151, 0.26);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 8px 22px rgba(170, 74, 106, 0.18);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.music-toggle span {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.music-toggle.is-playing {
+  animation: music-pulse 1.8s ease-in-out infinite;
+}
+
+.music-toggle:focus-visible {
+  outline: 3px solid rgba(223, 66, 119, 0.28);
+  outline-offset: 3px;
+}
+
 .page-shell {
   position: relative;
   z-index: 1;
@@ -499,6 +534,11 @@ h1 span {
 @keyframes letter-open {
   from { opacity: 0; transform: translateY(28px) scale(0.96) rotateX(-8deg); }
   to { opacity: 1; transform: translateY(0) scale(1) rotateX(0); }
+}
+
+@keyframes music-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
 }
 
 @media (max-height: 700px) {
