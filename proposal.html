@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff2f6" />
+    <title>晓雨，我想认真地问你</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="proposal-page">
+    <div class="background-hearts" aria-hidden="true">
+      <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+    </div>
+
+    <main class="page-shell">
+      <section class="love-card proposal-card" aria-labelledby="proposal-title">
+        <p class="eyebrow">信里最重要的那句话</p>
+
+        <div class="heart-seal" aria-hidden="true">
+          <span>♥</span>
+        </div>
+
+        <p class="proposal-intro">现在，我想认真地问你：</p>
+        <h1 id="proposal-title">
+          晓雨，<br />
+          <span>可以成为我的女朋友吗？</span>
+        </h1>
+
+        <p class="love-note">
+          信里的每一句话都是真心的。<br />
+          我想要的答案，也只想亲口问你。
+        </p>
+
+        <div class="promise-list" aria-label="我的心意">
+          <p><span>♡</span> 分享每一份开心</p>
+          <p><span>♡</span> 接住每一次小情绪</p>
+          <p><span>♡</span> 一直真诚、一直偏爱你</p>
+        </div>
+
+        <div class="choice-area" aria-label="请选择你的答案">
+          <a class="button button-yes" href="success.html">
+            <span aria-hidden="true">♥</span> 同意
+          </a>
+          <button class="button button-no" id="no-button" type="button">不同意</button>
+        </div>
+
+        <p class="gentle-hint">答案不着急，但我的喜欢很认真。</p>
+      </section>
+    </main>
+
+    <div class="dialog-backdrop" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" hidden>
+      <div class="dialog-card">
+        <div class="dialog-heart" aria-hidden="true">♡</div>
+        <h2 id="dialog-title">再考虑一下嘛</h2>
+        <p id="dialog-message">要不要再给我一次机会？</p>
+        <button class="button button-yes dialog-close" id="dialog-close" type="button">好吧，再想想</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
